@@ -13,10 +13,10 @@ namespace TaskPractice
 
         public void ShowInfo()
         {
-            Console.WriteLine(Id);
-            Console.WriteLine(Username);
-            Console.WriteLine(Email);
-            Console.WriteLine(Role);
+            Console.WriteLine("ID: "+Id);
+            Console.WriteLine("Username: "+Username);
+            Console.WriteLine("Email: "+Email);
+            Console.WriteLine("Role: "+Role);
         }
         public User(string username, string email, Role role)
         {
