@@ -24,7 +24,6 @@ namespace TaskPractice
             Username = username;
             Email = email;
             Role = role;
-
         }
     }
 }

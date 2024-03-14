@@ -6,47 +6,42 @@ namespace TaskPractice
 {
     internal class Library : IEntity
     {
-        static int BookLimit = 5;
+        public int BookLimit { get; set; }
+
         private Book[] books = new Book[0];
+       
 
-
-
-
-
-
-
-
-
-
-
-        public void addBook(Book bookName)
+        public void addBook(Book newBook)
         {
-
-            if (bookName.isDeleted == false)
+            if (newBook.isDeleted == false)
             {
+                if (books.Length == 0)
+                {
+                    Array.Resize(ref books, books.Length + 1);
+                    newBook = books[books.Length - 1];
+                    return;
+                }
                 foreach (Book book in books)
                 {
-                    if (book.Name == bookName.Name)
+                    if (book.Name == newBook.Name)
                     {
                         Console.WriteLine(ResponseMessage.AlreadyExistsException);
                         return;
                     }
-                    else
+
+                    if (books.Length > BookLimit)
+                    {
+                        Console.WriteLine(ResponseMessage.CapacityLimitException);
+                        return;
+                    }
+                    if (books.Length < BookLimit)
                     {
                         Array.Resize(ref books, books.Length + 1);
-                        if (books.Length > BookLimit)
-                        {
-                            Console.WriteLine(ResponseMessage.CapacityLimitException);
-                        }
-                        books[books.Length - 1] = bookName;
+                        books[books.Length - 1] = newBook;
                     }
 
                 }
             }
-
-
-
-
         }
 
         public void getBookById(int? id)
@@ -90,7 +85,6 @@ namespace TaskPractice
                 else Console.WriteLine(ResponseMessage.NotFountException);
             }
         }
-
         public void editBookName(int? id, string newName)
         {
             if (id == null)
@@ -110,7 +104,7 @@ namespace TaskPractice
         }
         public void filterByPageCount(int minPageCount, int maxPageCount)
         {
-            foreach(Book book in books)
+            foreach (Book book in books)
             {
                 if (book.isDeleted == false)
                 {

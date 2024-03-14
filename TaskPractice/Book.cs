@@ -31,9 +31,6 @@ namespace TaskPractice
             AuthorName = authorName;
             PageCount = pageCount;
         }
-
-
-
         public void ShowInfo()
         {
             Console.WriteLine(Id);

@@ -56,13 +56,13 @@ namespace TaskPractice
             //   }
 
             Book book1 = new("Kitab1", "Author1", 500);
-            Console.WriteLine(book1.isDeleted);
-            Library library = new Library();
-            library.addBook(book1);
-            library.filterByPageCount(20, 1000);
-            library.editBookName(1, "Kitab3");
-            library.getBookById(1);
-            library.getAllBooks();
+            Library books = new();
+            books.BookLimit = 10;
+            books.addBook(book1);
+            Book book2 = new("Kitab2", "Author2", 900);
+            books.addBook(book2);
+            books.getAllBooks();
+
 
 
 
