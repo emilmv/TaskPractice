@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskPractice", "TaskPractice\TaskPractice.csproj", "{FD683A9C-5C0D-4C4F-85E6-274C06BACF1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskPractice", "TaskPractice\TaskPractice.csproj", "{FD683A9C-5C0D-4C4F-85E6-274C06BACF1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskPractice.Utils", "TaskPractice.Utils\TaskPractice.Utils.csproj", "{CEBE6039-0B0B-4373-8FBD-DA051C208874}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskPractice.Utils", "TaskPractice.Utils\TaskPractice.Utils.csproj", "{CEBE6039-0B0B-4373-8FBD-DA051C208874}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImplicitOperator", "Casting\ImplicitOperator.csproj", "{8F50DA1E-26C1-4931-87CA-91B5C8E166BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{CEBE6039-0B0B-4373-8FBD-DA051C208874}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CEBE6039-0B0B-4373-8FBD-DA051C208874}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CEBE6039-0B0B-4373-8FBD-DA051C208874}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F50DA1E-26C1-4931-87CA-91B5C8E166BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F50DA1E-26C1-4931-87CA-91B5C8E166BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F50DA1E-26C1-4931-87CA-91B5C8E166BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F50DA1E-26C1-4931-87CA-91B5C8E166BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
